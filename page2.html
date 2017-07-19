@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="src/model/page2.js">
+        name = localStorage.getItem("name");
+        window.addEventListener("load", function (e) {
+            var text = document.createTextNode(name);
+            document.getElementById('divMsg').appendChild(text);
+        });
+    </script>
+
+</head>
+<body>
+    Hello <p id="divMsg"></p>, it's nice of you to join us!
+</body>
+</html>
