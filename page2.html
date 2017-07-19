@@ -5,15 +5,12 @@
     <meta charset="utf-8" />
     <title></title>
     <script src="src/model/page2.js">
-        name = localStorage.getItem("name");
-        window.addEventListener("load", function (e) {
-            var text = document.createTextNode(name);
-            document.getElementById('divMsg').appendChild(text);
-        });
+        var name = localStorage.getItem("name");
+        document.getElementById("username").innerHTML = name;
     </script>
 
 </head>
 <body>
-    Hello <p id="divMsg"></p>, it's nice of you to join us!
+    Hello <p id="username"></p>, it's nice of you to join us!
 </body>
 </html>
