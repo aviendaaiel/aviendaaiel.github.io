@@ -103,9 +103,9 @@ function play(characterName) {
             <p>&#10077; Good! Here, this is the list of people I want you to rid me of. If you fail, your name will be mud so don&#10076;t f** k it up!! &#10078;</p> \
             <p>&#10077; Chill! Give me a few days and your troubles will be down the u- bend.&#10078;</p ></div> \
             <p>As you shut the door behind you, you roll your eyes. This is gonna be a piece of cake!</p> \
-            <a href='#' id='exploreArcadia'>Explore the town</a> <br /><br/> \
+            <div class='choices'><a href='#' id='exploreArcadia'>Explore the town</a> <br /><br/> \
             <a href='#' id='visitBar'>Visit Shodans Bar</a> <br /><br/> \
-            <a href='#' id='readList'>Read the list of names</a>";
+            <a href='#' id='readList'>Read the list of names</a></div>";
 
         var hp = 60;
 
@@ -122,9 +122,9 @@ function play(characterName) {
         <p>&#10077;I hope your luck holds out.Here, this is the list of people I want you to rid me of.If you fail, your name will be mud so don&#10076;t f** k it up!!&#10078;</p> \
         <p>&#10077;Easy, easy! Give me a few days and your troubles will be down the u-bend.&#10078;</p > \
         <p>As you shut the door behind you, you wonder how this town got so unlucky! </p> \
-        <a href='#' id='exploreArcadia'>Explore the town</a> <br /><br/> \
+        <div class='choices'><a href='#' id='exploreArcadia'>Explore the town</a> <br /><br/> \
         <a href='#' id='visitBar'>Visit Shodans Bar</a> <br /><br/> \
-        <a href='#' id='readList'>Read the list of names</a>";
+        <a href='#' id='readList'>Read the list of names</a></div>";
 
         var hp = 50;
 
@@ -141,9 +141,9 @@ function play(characterName) {
         <p>&#10077;As it should be. Here, this is the list of people I want you to rid me of. If you fail, your name will be mud so don&#10076;t f** k it up!!&#10078;</p> \
         <p>&#10077;Don&#10076;t worry Sir! Give me a few days and your troubles will be down the u-bend.&#10078;</p > \
         <p>As you shut the door behind you, you wonder how this town survives! </p> \
-        <a href='#' id='exploreArcadia'>Explore the town</a> <br /><br/> \
-        <a href='#' id='visitBar' > Visit Shodans Bar</a > <br /><br/> \
-        <a href='#' id='readList'>Read the list of names</a>";
+        <div class='choices'><a href='#' id='exploreArcadia'>Explore the town</a> <br /><br/> \
+        <a href='#' id='visitBar'>Visit Shodans Bar</a> <br /><br/> \
+        <a href='#' id='readList'>Read the list of names</a></div>";
 
         var hp = 55;
 
@@ -183,25 +183,28 @@ function exploreTown(characterName) {
 
     if (characterName == "Smacka") {
 
-        gameContent.innerHTML = '<p>I&#10076;m ' + characterName + '</p> \
-        <a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/> \
-        <a href="#" id="readList">Read the list of names</a>';
+        gameContent.innerHTML = '<p>You start wandering around the town, it&#10076;s a lot worse than you expected! \
+        You overhear someone mentioning a bar that&#10076;s a well known drinking hole for the scummier residents of the town. </p> \
+        <div class="choices"><a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/> \
+        <a href="#" id="readList">Read the list of names</a></div>';
 
     }
 
     else if (characterName == "Fortuna") {
 
-        gameContent.innerHTML = '<p>No casino .....</p> \
-        <a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/> \
-        <a href="#" id="readList">Read the list of names</a>';
+        gameContent.innerHTML = '<p>You start wandering around the town, it&#10076;s a lot worse than you expected! \
+        You overhear someone mentioning a bar that&#10076;s a well known drinking hole for the scummier residents of the town. </p> \
+        <div class="choices"><a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/> \
+        <a href="#" id="readList">Read the list of names</a></div>';
 
     }
 
     else {
 
-        gameContent.innerHTML = '<p>I wonder if there is a library ....</p> \
-        <a href="#" id="visitBar">Take a look at this bar</a> <br /><br/> \
-        <a href="#" id="readList">Read the list of names</a>';
+        gameContent.innerHTML = '<p>You start wandering around the town, it&#10076;s a lot worse than you expected! \
+        You overhear someone mentioning a bar that&#10076;s a well known drinking hole for the scummier residents of the town. </p> \
+        <div class="choices"><a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/> \
+        <a href="#" id="readList">Read the list of names</a></div>';
 
     };
 
@@ -230,25 +233,28 @@ function visitShodans(characterName) {
 
     if (characterName == "Smacka") {
 
-        gameContent.innerHTML = '<p>Proper shithole this is!</p> \
-        <a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
-        <a href="#" id="readList">Read the list of names</a>';
+        gameContent.innerHTML = '<p>There&#10076;s a sign on the door saying it doesn&#10076;t open till 6. \
+        Guess you&#10076;ll just have to come back later.</p> \
+        <div class="choices"><a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
+        <a href="#" id="readList">Read the list of names</a></div>';
 
     }
 
     else if (characterName == "Fortuna") {
 
-        gameContent.innerHTML = '<p>Oh God, what on earth is that smell!!</p> \
-        <a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
-        <a href="#" id="readList">Read the list of names</a>';
+        gameContent.innerHTML = '<p><p>There&#10076s; a sign on the door saying it doesn&#10076;t open till 6. \
+        Guess you&#10076;ll just have to come back later.</p> \
+        <div class="choices"><a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
+        <a href="#" id="readList">Read the list of names</a></div>';
 
     }
 
     else {
 
-        gameContent.innerHTML = '<p>Oh! A bookshelf!</p> \
-        <a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
-        <a href="#" id="readList">Read the list of names</a>';
+        gameContent.innerHTML = '<p><p>There&#10076s; a sign on the door saying it doesn&#10076;t open till 6. \
+        Guess you&#10076;ll just have to come back later.</p> \
+        <div class="choices"><a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
+        <a href="#" id="readList">Read the list of names</a></div>';
 
     };
 
@@ -277,9 +283,10 @@ function readNameList(characterName) {
 
     gameContent.innerHTML = '<div class="deathList"><h3><u>Deathlist!</u></h3><p>The Nameless One</p> \
     <p>Lara Croft</p><p>Link</p><p>Guybrush Threepwood</p><p>Master Chief</p><p>Sephiroth</p><p>GLaDOS</p> \
-    <p>Kratos</p><p>Brucie Kibbutz</p></div> \
-    <a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
-    <a href="#" id="visitBar2">Go back to the Bar and decide who to track first</a>';
+    <p>Kratos</p><p>Brucie Kibbutz</p></div><br/> \
+    <div class="choices"><a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
+    <a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/></div>';
+    /*<a href="#" id="visitBar2">Go back to the Bar and decide who to track first</a>*/
 
     var exploreArcadia = document.getElementById("exploreArcadia").addEventListener("click", function () {
 
@@ -287,10 +294,16 @@ function readNameList(characterName) {
 
     });
 
-    var visitBar2 = document.getElementById("visitBar2").addEventListener("click", function () {
+    var visitBar = document.getElementById("visitBar").addEventListener("click", function () {
+
+        visitShodans();
+
+    });
+
+    /*var visitBar2 = document.getElementById("visitBar2").addEventListener("click", function () {
 
         visitShodans2();
 
-    });
+    });*/
 
 }
