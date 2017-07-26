@@ -1,20 +1,34 @@
-﻿<!DOCTYPE html>
-
+﻿
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Awooga</title>
+    <title>Yet another proof of concept</title>
     <link rel="stylesheet"
           type="text/css"
           href="stylesheet.css" />
-        <script src="src/model/Objects.js"></script>
-
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Caveat" />
+    <script src="src/fight.js"></script>
 </head>
 <body>
-    <p id="indexPage"></p>
-    <script>
-        document.getElementById("indexPage").innerHTML = index
-    </script>
-    <a href="page2.html">Next Page</a>
+
+    <div id="gameContent">
+    
+    <h1>The Gangs of Arcadia</h1>
+
+    Arcadia is a bit of a weird place. It's inhabited by game characters, old and new!  
+    Unfortunately, some of the more unsavoury characters have been wreaking havoc on the city and they must be stopped. 
+    After trying everything he can think of, the Chief of Police has had no choice but to turn to expensive (and sometimes downright rude) bounty hunters to bring control back to his city. Will you help him?<br /><br />
+
+    Choose which bounty hunter you want to play as:<br />
+<h3>Smacka:</h3>Smacka, as his name suggests is a bit of a brute. He doesn't use words (I mean, he doesn't really know all that many words anyway).
+        If you want to simply fight your way through this, he's the guy for you!   <br /><br/>  <a href="#" id="playAsSmacka">I'll play as Smacka</a><br/>
+<h3>Fortuna:</h3>Fortuna is one lucky son of a bitch. If he fell off a 9th floor balcony, he'd land on the matress 50yds down the street!
+        If you want to blag your way through this, do the click thing.   <br /><br/> <a href="#" id="playAsFortuna">I'll play as Fortuna</a><br/>
+<h3>Interra:</h3>Interra is smart. Booksmart .... Lifesmart .... Peoplesmart .... just smart. She's like a walking Google search.
+        If you want to be a smart arse, then I don't need to tell you what to do.   <br /><br/> <a href="#" id="playAsInterra">I'll play as Interra</a><br/></div>
+
+    <script>gameStart()</script>
+
 </body>
 </html>

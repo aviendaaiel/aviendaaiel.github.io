@@ -1,9 +1,28 @@
-﻿* {
+﻿body {
     text-align:center;
     background-color:blanchedalmond;
-    font-size:x-large;
+    font-size:large;
 }
 
 a {
+    font-size:large;
     color:black;
+    border:solid;
+    border-color:black;
+    text-decoration:none;
+    background-color: darksalmon; 
+}
+
+.speech {
+    font-style:italic;
+}
+
+.deathList {
+    text-align:center;
+    font-family: 'Caveat' , cursive;
+    font-size:larger;
+    border:solid;
+    border-color:black;
+    width:200px;
+    background-color:white;
 }
