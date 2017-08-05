@@ -183,8 +183,12 @@ function exploreTown(characterName) {
 
     if (characterName == "Smacka") {
 
-        gameContent.innerHTML = '<p>You start wandering around the town, it&#10076;s a lot worse than you expected! \
-        You overhear someone mentioning a bar that&#10076;s a well known drinking hole for the scummier residents of the town. </p> \
+        gameContent.innerHTML = '<p>You start wandering around the town, it&#39;s a lot worse than you expected! \
+        The place is so run down, it&#39;s such a dump. You pass several boarded up shops with broken glass outside them. \
+        Blood stains the pavement and no one makes any eye contact with you. You hear some shouting up ahead, and being a nosy bastard you go and see what&#39;s going on. </p>\
+        It doesn&#39t turn out to be anything interesting though, just two local drunks having a barney and a few also drunk locals cheering them on. \
+        >p>You overhear one of them mentioning a bar, and given the state of the locals you reckon that&#39;ll be a drinking hole for the scummier residents of the town. \
+        Probably as good a place to start as any!</p> \
         <div class="choices"><a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/> \
         <a href="#" id="readList">Read the list of names</a></div>';
 
@@ -192,8 +196,12 @@ function exploreTown(characterName) {
 
     else if (characterName == "Fortuna") {
 
-        gameContent.innerHTML = '<p>You start wandering around the town, it&#10076;s a lot worse than you expected! \
-        You overhear someone mentioning a bar that&#10076;s a well known drinking hole for the scummier residents of the town. </p> \
+        gameContent.innerHTML = '<p>You start wandering around the town, it&#39;s a lot worse than you expected! \
+        The place is so run down, it&#39;s such a dump. You pass several boarded up shops with broken glass outside them. \
+        Blood stains the pavement and no one makes any eye contact with you. You hear some shouting up ahead, and being a nosy bastard you go and see what&#39;s going on. </p>\
+        It doesn&#39t turn out to be anything interesting though, just two local drunks having a barney and a few also drunk locals cheering them on. \
+        >p>You overhear one of them mentioning a bar, and given the state of the locals you reckon that&#39;ll be a drinking hole for the scummier residents of the town. \
+        Probably as good a place to start as any!</p> \
         <div class="choices"><a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/> \
         <a href="#" id="readList">Read the list of names</a></div>';
 
@@ -201,8 +209,12 @@ function exploreTown(characterName) {
 
     else {
 
-        gameContent.innerHTML = '<p>You start wandering around the town, it&#10076;s a lot worse than you expected! \
-        You overhear someone mentioning a bar that&#10076;s a well known drinking hole for the scummier residents of the town. </p> \
+        gameContent.innerHTML = '<p>You start wandering around the town, it&#39;s a lot worse than you expected! \
+        The place is so run down, it&#39;s such a dump. You pass several boarded up shops with broken glass outside them. \
+        Blood stains the pavement and no one makes any eye contact with you. You hear some shouting up ahead, and being a nosy bastard you go and see what&#39;s going on. </p>\
+        It doesn&#39t turn out to be anything interesting though, just two local drunks having a barney and a few also drunk locals cheering them on. \
+        >p>You overhear one of them mentioning a bar, and given the state of the locals you reckon that&#39;ll be a drinking hole for the scummier residents of the town. \
+        Probably as good a place to start as any!</p> \
         <div class="choices"><a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/> \
         <a href="#" id="readList">Read the list of names</a></div>';
 
@@ -231,33 +243,10 @@ function visitShodans(characterName) {
 
     playerStats();
 
-    if (characterName == "Smacka") {
-
         gameContent.innerHTML = '<p>There&#10076;s a sign on the door saying it doesn&#10076;t open till 6. \
         Guess you&#10076;ll just have to come back later.</p> \
         <div class="choices"><a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
         <a href="#" id="readList">Read the list of names</a></div>';
-
-    }
-
-    else if (characterName == "Fortuna") {
-
-        gameContent.innerHTML = '<p><p>There&#10076s; a sign on the door saying it doesn&#10076;t open till 6. \
-        Guess you&#10076;ll just have to come back later.</p> \
-        <div class="choices"><a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
-        <a href="#" id="readList">Read the list of names</a></div>';
-
-    }
-
-    else {
-
-        gameContent.innerHTML = '<p><p>There&#10076s; a sign on the door saying it doesn&#10076;t open till 6. \
-        Guess you&#10076;ll just have to come back later.</p> \
-        <div class="choices"><a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
-        <a href="#" id="readList">Read the list of names</a></div>';
-
-    };
-
 
     var exploreArcadia = document.getElementById("exploreArcadia").addEventListener("click", function () {
 
@@ -282,8 +271,8 @@ function readNameList(characterName) {
     playerStats();
 
     gameContent.innerHTML = '<div class="deathList"><h3><u>Deathlist!</u></h3><p>The Nameless One</p> \
-    <p>Lara Croft</p><p>Link</p><p>Guybrush Threepwood</p><p>Master Chief</p><p>Sephiroth</p><p>GLaDOS</p> \
-    <p>Kratos</p><p>Brucie Kibbutz</p></div><br/> \
+    <p>Gannondorf</p><p>Bowser</p><p>Kefka</p><p>Porky Minch</p><p>Sephiroth</p><p>GLaDOS</p> \
+    <p>Kratos</p><p>Handsome Jack</p></div><br/> \
     <div class="choices"><a href="#" id="exploreArcadia">See what the rest of the town has to offer</a> <br /><br/> \
     <a href="#" id="visitBar">Take a look at Shodans bar</a> <br /><br/></div>';
     /*<a href="#" id="visitBar2">Go back to the Bar and decide who to track first</a>*/
